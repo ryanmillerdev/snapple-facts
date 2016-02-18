@@ -1,0 +1,17 @@
+
+<ion-navbar *navbar>
+  <ion-buttons (click)="sendRandomFact()" start>
+    <button>
+      <ion-icon name="clock"></ion-icon>
+    </button>
+  </ion-buttons>
+  <ion-title>
+    Snapple Facts!
+  </ion-title>
+</ion-navbar>
+
+<ion-content class="facts-page">
+
+  <fact-card *ngFor="#fact of facts" [fact]="fact"></fact-card>
+
+</ion-content>
