@@ -26,6 +26,15 @@ export class FactsPage {
 
   }
 
+  onFactCardClicked(event) {
+
+    // This method simply serves to demostrate the usage of @Output()
+    // from within FactCard. Use (click) on the top-level component
+    // markup instead if you need to do something real.
+    console.info('Hey! You clicked a fact card! Here is the event: ' + event);
+
+  }
+
   sendRandomFact() {
 
     const randomFact = this.factService.getRandomFact();

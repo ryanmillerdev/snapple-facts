@@ -1,5 +1,5 @@
 import {Page, ActionSheet, NavController} from 'ionic-framework/ionic';
-import {Component, Input} from 'angular2/core';
+import {Component, Input, Output, EventEmitter} from 'angular2/core';
 
 import {FactService} from '../services/FactService';
 
@@ -20,6 +20,8 @@ export class FactCard {
 
   @Input() fact;
 
+  @Output() factCardClicked = new EventEmitter();
+
   factService: FactService
   nav: NavController
 
@@ -32,6 +34,8 @@ export class FactCard {
   }
 
   showFactOptions() {
+
+    this.factCardClicked.emit('clicked');
 
     const actionSheet = ActionSheet.create({
       title: 'Fact Options',

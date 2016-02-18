@@ -12,6 +12,6 @@
 
 <ion-content class="facts-page">
 
-  <fact-card *ngFor="#fact of facts" [fact]="fact"></fact-card>
+  <fact-card *ngFor="#fact of facts" [fact]="fact" (factCardClicked)="onFactCardClicked($event)"></fact-card>
 
 </ion-content>
