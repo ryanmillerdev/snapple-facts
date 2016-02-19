@@ -4,8 +4,10 @@
 
 0. Make sure you have Cordova installed: `npm install -g cordova`.
 
-1. Make Sure You Have the Latest Version of Ionic CLI: `npm install -g ionic@beta`
+1. Ensure NPM dependencies are installed: `npm install`.
 
-2. Ensure native dependencies are installed with `ionic state restore`.
+2. Make Sure You Have the Latest Version of Ionic CLI: `npm install -g ionic@beta`
 
-2. Run `ionic serve` And :boom:! Or run `ionic build ios` to generate an XCode project for your iOS device.
+3. Ensure native dependencies are installed with `ionic state restore`.
+
+4. Run `ionic serve` And :boom:! Or run `ionic build ios` to generate an XCode project for your iOS device.
